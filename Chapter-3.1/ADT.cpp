@@ -105,7 +105,8 @@ bool Top(LinkStack LS, int &element) {
 	if (!LS) {
 		return false;
 	}
-	return LS->data;
+	element = LS->data;
+	return true;
 }
 
 

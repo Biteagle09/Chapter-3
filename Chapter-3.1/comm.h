@@ -5,6 +5,7 @@
 void randMy(int arr[], int count, int limit);
 void increasingList(int arr[], int count, int start);
 void printArray(int arr[], int len);
+//void printCharArray(int ch[]);
 void quickSort(int arr[], int low, int high);
 LSNode* createLSNode(int data);
 LinkStack createLinkStack();
@@ -26,3 +27,6 @@ void printLinkStack(LinkStack LS);
 
 
 //algorithm function 
+extern bool JudgeSeriesIsTrue_1(char ch[]);  //Ã‚3.1.3
+extern bool JudgeSeriesIsTrue_2(char ch[]);  //Ã‚3.1.3
+
