@@ -27,6 +27,8 @@ void test313() {
 	char chB[] = "IOOIOIIO";
 	char chC[] = "IIIOIOIO";
 	char chD[] = "IOIIOIOO";
+	char chE[] = "IOIIOOII";
+	char chF[] = "IOIOOIOO";
 	bool flag;
 
 	flag = JudgeSeriesIsTrue_1(chA);
@@ -44,4 +46,12 @@ void test313() {
 	flag = JudgeSeriesIsTrue_1(chD);
 	if (flag) printf_s("The chD is True!!!\n");
 	else printf_s("The chD is False!!!\n");
+
+	flag = JudgeSeriesIsTrue_1(chE);
+	if (flag) printf_s("The chE is True!!!\n");
+	else printf_s("The chE is False!!!\n");
+
+	flag = JudgeSeriesIsTrue_1(chF);
+	if (flag) printf_s("The chF is True!!!\n");
+	else printf_s("The chF is False!!!\n");
 }
