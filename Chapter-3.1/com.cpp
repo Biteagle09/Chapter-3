@@ -15,7 +15,7 @@ void randMy(int arr[], int count, int limit) {
 
 
 
-//生成一个从start开始长度为count的连续有序数组，
+//生成一个从start开始长度为count的连续递增有序数组，
 void increasingList(int arr[], int count, int maxNumber) {
 	srand((int)time(0));
 	int end = random(maxNumber);
@@ -65,4 +65,34 @@ void quickSort(int arr[], int low, int high) {
 		quickSort(arr, low, i - 1);
 		quickSort(arr, i + 1, high);
 	}
+}
+
+
+
+//从栈顶至栈底打印顺序栈内的元素
+void printSqStack(SqStack S) {
+	if (S.top == -1) {
+		printf_s("NULL\n");
+		return;
+	}
+	int len = S.top + 1;
+	int i = S.top;
+	for (i; i > 0; i--) {
+		printf_s("%d<=", S.data[i]);
+	}
+	printf_s("%d\n", S.data[i]);
+}
+
+//从栈顶至栈底打印链式栈内的元素
+void printLinkStack(LinkStack LS) {
+	if (!LS) {
+		printf_s("NULL\n");
+		return;
+	}
+	LSNode* p = LS;
+	while (p->next) {
+		printf_s("%d<=", p->data);
+		p = p->next;
+	}
+	printf_s("%d\n", p->data);
 }
