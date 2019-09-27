@@ -20,7 +20,7 @@ typedef int elemType;
 
 
 
-//顺序结构体的定义
+//顺序栈结构体的定义
 typedef struct {
 	elemType data[MaxSize];   //栈的数据域
 	elemType top;            //栈顶指针

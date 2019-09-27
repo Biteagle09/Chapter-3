@@ -5,7 +5,6 @@
 void randMy(int arr[], int count, int limit);
 void increasingList(int arr[], int count, int start);
 void printArray(int arr[], int len);
-//void printCharArray(int ch[]);
 void quickSort(int arr[], int low, int high);
 LSNode* createLSNode(int data);
 LinkStack createLinkStack();
