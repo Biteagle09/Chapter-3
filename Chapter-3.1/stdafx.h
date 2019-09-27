@@ -32,11 +32,15 @@ typedef struct {
 
 
 
-//链式栈的结构体定义
+//链式栈的结构体定义（int型）
 typedef struct LSNode {
 	int data;
 	struct LSNode *next;
 }LSNode, *LinkStack;
 
-
+//链式栈结构体的定义（char型）
+typedef struct LSCNode {
+	char data;
+	struct LSCNode *next;
+}LSCNode, *CLinkStack;
 

@@ -79,13 +79,23 @@ bool Pop(SqStack &S, int &element) {
 	return true;
 }
 
-//链式栈的出栈操作
+//链式栈的出栈操作（int型）
 bool Pop(LinkStack &LS, int &element) {
 	if (!LS) {
 		return false;
 	}
 	element = LS->data;
 	LS = LS->next;
+	return true;
+}
+
+//链式栈的出栈操作（int型）
+bool Pop(LSCNode& LCS, char& element) {
+	if (LCS == NULL) {
+		return false;
+	}
+	element = LCS->data;
+	LCS = LCS->next;
 	return true;
 }
 

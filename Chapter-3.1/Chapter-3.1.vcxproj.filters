@@ -27,6 +27,9 @@
     <ClCompile Include="3.1.3_operationIsTrue.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="3.1.4_isCenterSymmetry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
