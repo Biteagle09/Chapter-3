@@ -30,4 +30,6 @@ void printLinkStack(LinkStack LS);
 extern bool JudgeSeriesIsTrue_1(char ch[]);  //题3.1.3
 extern bool JudgeSeriesIsTrue_2(char ch[]);  //题3.1.3
 extern bool IsCenterSymmetry(LinkStack LS, int n);  //题3.1.4
+extern bool StkPush(Stk& stk, int i, int x);  //题3.1.5
+extern bool StkPop(Stk& stk, int i, int& e);  //题3.1.6
 

@@ -11,7 +11,7 @@
 #include <string>    
 
 
-#define MaxSize 50
+#define MaxSize 10
 typedef int elemType;
 
 
@@ -37,5 +37,14 @@ typedef struct LSNode {
 	int data;
 	struct LSNode *next;
 }LSNode, *LinkStack;
+
+
+
+
+typedef struct {
+	int data[MaxSize];
+	int top[2];
+}Stk;
+
 
 
