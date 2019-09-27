@@ -11,13 +11,13 @@
 **********************************************************************************************/
 
 bool IsCenterSymmetry(LinkStack LS, int n) {
-	int i;  //栈顶指针
-	char a[MaxSize] = {0};   //模拟栈(char型)
-	LSNode *p = LS;          //待检测序列的遍历指针
-	char b = (char)0;            //临时将int 型 转换为 char 型
+	int i;							//栈顶指针
+	char a[MaxSize] = {0};			//模拟栈(char 型)
+	LSNode *p = LS;					//待检测序列的遍历指针
+	char b = (char)0;				//临时将int 型 转换为 char 型
 	for (i = 0; i < n / 2; i++) {
-		b = (char)p->data;     //int 转 char
-		a[i] = b;             //入栈
+		b = (char)p->data;			//int 转 char
+		a[i] = b;					//入栈
 		p = p->next;
 	}
 	i--;

@@ -2,7 +2,7 @@
 #include "comm.h"
 #define length 7
 #define limit 100
-int arr[length]= {1,7,5,6,5,7,1};
+int arr[length]= {5,5,5,5,5,5,5};
 // 
 
 //º¯ÊıÉùÃ÷
