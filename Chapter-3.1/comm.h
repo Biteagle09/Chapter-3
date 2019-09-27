@@ -29,4 +29,5 @@ void printLinkStack(LinkStack LS);
 //algorithm function 
 extern bool JudgeSeriesIsTrue_1(char ch[]);  //Ã‚3.1.3
 extern bool JudgeSeriesIsTrue_2(char ch[]);  //Ã‚3.1.3
+extern bool IsCenterSymmetry(LinkStack LS, int n);  //Ã‚3.1.4
 

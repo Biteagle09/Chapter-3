@@ -30,7 +30,7 @@ void InitSqStatck(SqStack &S) {
 
 //初始化一个链式栈
 void InitLinkStatck(LinkStack &LS) {
-	LS->next = NULL;
+	LS = NULL;
 }
 
 
@@ -65,7 +65,6 @@ void Push(LinkStack &LS, int x) {
 	}else {
 		LS = newLSNode;
 	}
-
 }
 
 
@@ -86,16 +85,6 @@ bool Pop(LinkStack &LS, int &element) {
 	}
 	element = LS->data;
 	LS = LS->next;
-	return true;
-}
-
-//链式栈的出栈操作（int型）
-bool Pop(LSCNode& LCS, char& element) {
-	if (LCS == NULL) {
-		return false;
-	}
-	element = LCS->data;
-	LCS = LCS->next;
 	return true;
 }
 

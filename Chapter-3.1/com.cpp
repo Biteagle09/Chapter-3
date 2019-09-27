@@ -39,19 +39,6 @@ void printArray(int arr[], int len) {
 	}
 }
 
-//从头至尾打印char型数组里的内容
-//void printCharArray(char ch[]) {
-//	if (ch == NULL) {
-//		printf("NULL\n");
-//		return;
-//	}
-//	int i = 0;
-//	while (ch[i] != '\0') {
-//		printf("%s, ", ch[i]);
-//		i++;
-//	}
-//	printf("\n");
-//}
 
 
 

@@ -12,7 +12,7 @@
 
 
 #define MaxSize 50
-
+typedef int elemType;
 
 
 
@@ -22,8 +22,8 @@
 
 //顺序结构体的定义
 typedef struct {
-	int data[MaxSize];   //栈的数据域
-	int top;            //栈顶指针
+	elemType data[MaxSize];   //栈的数据域
+	elemType top;            //栈顶指针
 }SqStack;
 
 
@@ -38,9 +38,4 @@ typedef struct LSNode {
 	struct LSNode *next;
 }LSNode, *LinkStack;
 
-//链式栈结构体的定义（char型）
-typedef struct LSCNode {
-	char data;
-	struct LSCNode *next;
-}LSCNode, *CLinkStack;
 

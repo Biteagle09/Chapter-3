@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClCompile Include="3.1.3_operationIsTrue.cpp" />
     <ClCompile Include="3.1.4_isCenterSymmetry.cpp" />
+    <ClCompile Include="3.1.5_publicSpaceStack.cpp" />
     <ClCompile Include="ADT.cpp" />
     <ClCompile Include="com.cpp" />
     <ClCompile Include="main.cpp" />

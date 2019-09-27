@@ -1,21 +1,23 @@
 #include "stdafx.h"
 #include "comm.h"
-#define length 9
+#define length 7
 #define limit 100
-int arr[length];
-// = {1,3,4,2,7,5,9,0}
+int arr[length]= {1,7,5,6,5,7,1};
+// 
 
 //函数声明
-void test313();
-
+//void test313();
+void test314();
 
 
 
 int main() {
-	randMy(arr, length, limit);
+	//randMy(arr, length, limit);
 	printArray(arr, length);
 	printf_s("******************上面是初始数组**********************************\n\n");
-	test313();
+
+	//test313();
+	test314();
 }
 
 
@@ -54,4 +56,18 @@ void test313() {
 	flag = JudgeSeriesIsTrue_1(chF);
 	if (flag) printf_s("The chF is True!!!\n");
 	else printf_s("The chF is False!!!\n");
+}
+
+
+
+
+//题3.1.3 judge the series is center symmetry
+void test314() {
+	LinkStack LS = createLinkStack();
+	InitLinkStatck(LS);
+	for (int i = 0; i < length; i++) {
+		Push(LS, arr[i]);
+	}
+	printLinkStack(LS);
+	IsCenterSymmetry(LS, length) ? printf_s("It is a center symmetry!!!\n") : printf_s("It is not a center symmetry!!!\n");
 }
