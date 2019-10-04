@@ -8,7 +8,7 @@ LinkQueue LQ;
 // = {5,5,5,5,5,5,5}
 
 //º¯ÊıÉùÃ÷
-void test_232();
+void test_331();
 
 
 int main() {
@@ -19,7 +19,7 @@ int main() {
 	InitLinkQueue(LQ);
 	
 
-	test_232();
+	test_331();
 	
 	
 
@@ -29,14 +29,7 @@ int main() {
 
 
 
-//test 2.3.2 invert SqQueue
-void test_232() {
-	SqStack SS;
-	SS.top = -1;
-	for (int i = 0; i < length; i++) {
-		EnQueue(SQ, arr[i]);
-	}
-	printSqQueue(SQ);
-	invertSqQueue(SS, SQ);
-	printSqQueue(SQ);
+//test 3.3.3 
+void test_331() {
+	
 }
