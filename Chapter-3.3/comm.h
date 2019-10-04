@@ -40,3 +40,5 @@ void ClearLinkStack(LinkStack& LS);
 
 
 //algorithm function 
+bool matchBracket(char* ch);             //Ã‚ 3.3.1
+int calculateAB(int a, char op, int b);   //Ã‚ 3.3.1

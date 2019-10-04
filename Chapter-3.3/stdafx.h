@@ -11,7 +11,7 @@
 
 
 #define MaxSize 50
-typedef int ElemType;
+typedef char ElemType;
 
 
 
