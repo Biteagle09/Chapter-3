@@ -14,11 +14,7 @@ LNode* createLNode(ElemType data) {
 
 
 //1-1、创建一个链式队列（包含着队头指针和队尾指针）
-LinkQueue* createLinkQueue() {
-	LinkQueue *LQ = (LinkQueue*)malloc(sizeof(LinkQueue));
-	return LQ;
-}
-
+//在初始化里已经整合了
 
 
 //2-1、初始化一个顺序队列
@@ -30,7 +26,7 @@ void InitSqQueue(SqQueue& SQ) {
 *2-2、初始化一个链式队列(带头结点的)
 **/
 void InitLinkQueue(LinkQueue &LQ) {
-	LQ.front = LQ.rear;
+	LQ.front = LQ.rear = (LNode*)malloc(sizeof(LNode));
 	LQ.front->next = NULL;
 }
 
@@ -94,10 +90,20 @@ void DeQueue(LinkQueue &LQ, ElemType &e) {
 
 //6-1、读取顺序队列队头元素
 ElemType GetHead(SqQueue SQ) {
-	return SQ.data[SQ.front];
+	if (!isEmpty(SQ)) {
+		return SQ.data[SQ.front];
+	} else {
+		printf("The SqQueue is null in GetHead()!!!\n");
+		return NULL;
+	}
 }
 
 //6-2、读取循环队列的队头元素
 ElemType GetHead(LinkQueue LQ) {
-	return LQ.front->data;
+	if (!isEmpty(LQ)) {
+		return LQ.front->next->data;;
+	}else {
+		printf("The LinkQueue is null in GetHead()!!!\n");
+		return NULL;
+	}
 }

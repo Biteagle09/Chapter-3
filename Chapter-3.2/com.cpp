@@ -73,21 +73,33 @@ void quickSort(int arr[], int low, int high) {
 //打印队列（顺序队-循环队列）里的元素（从队头到队尾）
 void printSqQueue(SqQueue SQ) {
 	if (SQ.front == SQ.rear) {
-		printf("The SqQueue is null!!!\n");
+		printf("The SqQueue is null in printSqQueue()!!!\n");
 		return;
 	}else {
 		int i = SQ.front;
 		int j = SQ.rear;
+		printf("SqQueue[%d]=={",j - i);
 		for (i; i < j - 1; i++) {
-			printf("%d--",SQ.data[i]);
+			printf("%d～",SQ.data[i]);
 		}
-		printf("%d\n", SQ.data[j-1]);
+		printf("%d}\n", SQ.data[j-1]);
 	}
 }
 
 
 
 //打印队列（链式队）里的元素（从队头到队尾）
-void printLinkQueue(LinkQueue LQ) {
-
+void printLinkQueue(LinkQueue LQ, int length) {
+	if (LQ.front == LQ.rear) {
+		printf("The LinkQueue is null in printLinkQueue()!!!\n");
+		return;
+	}
+	LNode* p = LQ.front->next;
+	printf("LinkQueue[%d]=={",length);
+	while (p->next) {
+		printf("%d～", p->data);
+		p = p->next;
+	}
+	printf("%d}\n", p->data);
+	free(p);
 }
