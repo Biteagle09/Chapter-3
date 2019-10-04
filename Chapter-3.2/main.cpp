@@ -14,6 +14,16 @@ int main() {
 	printArray(arr, length);
 	printf_s("******************上面是初始数组**********************************\n\n");
 
+	SqQueue SQ;
+	InitSqQueue(SQ);
+
+	for (int i = 0; i < length; i++) {
+		EnQueue(SQ, arr[i]);
+	}
+	int e = 0;
+	printSqQueue(SQ);
+	printf("GetHead==%d\n",GetHead(SQ));
+
 	
 	return 0;
 }

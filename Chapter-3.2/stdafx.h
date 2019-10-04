@@ -20,7 +20,7 @@ typedef int ElemType;
 
 
 //顺序队列结构体的定义
-typedef struct {
+typedef struct SqQueue{
 	ElemType data[MaxSize];
 	int front, rear;         //front-->队头指针           rear-->队尾指针
  }SqQueue;
@@ -32,13 +32,13 @@ typedef struct {
 
 
 //链式队列节点的定义
-typedef struct {
+typedef struct LNode{
 	ElemType data;
-	struct LinkNode* next;
-}LinkNode;
+	struct LNode *next;
+}LNode;
 //链式队列结构体的定义
-typedef struct {
-	LinkNode *front, *rear;        //队头结点和队尾结点指针
+typedef struct LinkQueue{
+	LNode *front, *rear;        //队头结点和队尾结点指针
 }LinkQueue;
 
 

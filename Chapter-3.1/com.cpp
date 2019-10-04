@@ -70,7 +70,7 @@ void quickSort(int arr[], int low, int high) {
 
 
 
-//从栈顶至栈底打印顺序栈内的元素
+//从栈顶至栈底打印栈（顺序栈）内的元素
 void printSqStack(SqStack S) {
 	if (S.top == -1) {
 		printf_s("NULL\n");
@@ -84,7 +84,7 @@ void printSqStack(SqStack S) {
 	printf_s("%d\n", S.data[i]);
 }
 
-//从栈顶至栈底打印链式栈内的元素
+//从栈顶至栈底打印栈（链式栈）内的元素
 void printLinkStack(LinkStack LS) {
 	if (!LS) {
 		printf_s("NULL\n");
