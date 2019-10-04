@@ -28,7 +28,7 @@ void InitSqStatck(SqStack &S) {
 	S.top = -1;
 }
 
-//初始化一个链式栈
+//初始化一个链式栈（链式栈是不带头结点的）
 void InitLinkStatck(LinkStack &LS) {
 	LS = NULL;
 }

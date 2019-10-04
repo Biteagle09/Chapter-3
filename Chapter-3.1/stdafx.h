@@ -11,7 +11,7 @@
 #include <string>    
 
 
-#define MaxSize 10
+#define MaxSize 50
 typedef int elemType;
 
 
