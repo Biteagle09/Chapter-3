@@ -10,7 +10,7 @@
 #include <cmath>  
 
 
-#define MaxSize 50
+#define MaxSize 20
 typedef int ElemType;
 
 
@@ -25,7 +25,12 @@ typedef struct SqQueue{
 	int front, rear;         //front-->队头指针           rear-->队尾指针
  }SqQueue;
 
-
+//有tag域来区分Q.front==Q.rear时的队列结构体
+typedef struct SqQueue_1 {
+	ElemType data[MaxSize];
+	int front, rear;         //front-->队头指针           rear-->队尾指针
+	int tag;                 //tag==0&&Q.front==Q.rear表示队空；tag==1&&Q.front==Q.rear表示队满;
+}SqQueue_1;
 
 
 
@@ -45,3 +50,8 @@ typedef struct LinkQueue{
 
 
 
+//顺序栈结构体的定义
+typedef struct {
+	ElemType data[MaxSize];   //栈的数据域
+	int top;            //栈顶指针
+}SqStack;

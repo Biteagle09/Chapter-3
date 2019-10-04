@@ -19,6 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="3.2.1_tagInQueue.cpp" />
+    <ClCompile Include="3.2.2_invertQueue.cpp" />
+    <ClCompile Include="3.2.3_stackSimulateQueue.cpp" />
     <ClCompile Include="ADT.cpp" />
     <ClCompile Include="com.cpp" />
     <ClCompile Include="main.cpp" />

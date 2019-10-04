@@ -24,4 +24,4 @@ ElemType GetHead(LinkQueue LQ);
 
 
 //algorithm function 
-
+void invertSqQueue(SqStack S, SqQueue& Q);

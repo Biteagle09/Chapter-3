@@ -27,7 +27,10 @@ void InitSqQueue(SqQueue& SQ) {
 **/
 void InitLinkQueue(LinkQueue &LQ) {
 	LQ.front = LQ.rear = (LNode*)malloc(sizeof(LNode));
-	LQ.front->next = NULL;
+	if (LQ.front) {
+		LQ.front->next = NULL;
+	}
+	
 }
 
 

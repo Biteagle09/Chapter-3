@@ -8,7 +8,7 @@ int arr[length];
 //º¯ÊıÉùÃ÷
 //void test313();
 //void test314();
-void test315();
+//void test315();
 
 
 int main() {
@@ -18,7 +18,7 @@ int main() {
 
 	//test313();
 	//test314();
-	test315();
+	//test315();
 }
 
 
