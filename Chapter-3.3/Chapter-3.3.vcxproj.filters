@@ -42,6 +42,9 @@
     <ClCompile Include="3.3.6_Fibonacci.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="3.3.7_InfixToPostExpression .cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="comm.h">
