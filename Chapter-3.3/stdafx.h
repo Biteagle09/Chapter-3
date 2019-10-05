@@ -61,3 +61,19 @@ typedef struct LSNode {
 	int data;
 	struct LSNode* next;
 }LSNode, * LinkStack;
+
+
+
+
+
+
+/*ÀýÌâ3*/
+typedef struct MyStatck {
+	char data[MaxSize];
+	int top;
+}MyStatck;
+
+typedef struct Post {
+	char data[MaxSize];
+	int len;
+}post;

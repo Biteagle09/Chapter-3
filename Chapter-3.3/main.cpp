@@ -11,9 +11,10 @@ LinkQueue LQ;
 //void test_331();
 //void test_332();
 //void test_333();
-void test_334();
+//void test_334();
 //void test_335();
 //void test_336();
+void test_337();
 
 int main() {
 	//randMy(arr, length, limit);
@@ -26,11 +27,13 @@ int main() {
 	//test_331();
 	//test_332();
 	//test_333();
-	test_334();
+	//test_334();
 	//test_335();
 	//test_336();
-
+	test_337();
 	
+
+
 	return 0;
 }
 
@@ -75,7 +78,7 @@ void test_333() {
 
 //test 3.3.4 
 void test_334() {
-
+	//无法测试，代码正确
 }
 
 
@@ -104,4 +107,18 @@ void test_336() {
 	printf_s("The Fibonacci(%d) == ", n);
 	long r = (long)fib(n);
 	printf_s("%d\n",r);
+}
+
+
+
+//test337 例题3 
+void test_337() {
+	char ch[] = "(57-8)+9/3+22*1+5";
+	printf("The infix expression is : ");
+	int i = 0;
+	while (ch[i] != '\0') {
+		printf("%c", ch[i++]);
+	}
+	printf_s("\nThe post expression is : ");
+	infixToPost(ch);
 }

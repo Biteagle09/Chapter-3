@@ -92,7 +92,7 @@ bool Pop(LinkStack &LS, int &element) {
 
 //»ñÈ¡Ë³ÐòÕ»¶¥ÔªËØ
 bool Top(SqStack S, int &element) {
-	if (S.top == MaxSize - 1) {
+	if (S.top == - 1) {
 		return false;
 	}
 	element = S.data[S.top];

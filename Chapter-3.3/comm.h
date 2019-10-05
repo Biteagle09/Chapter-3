@@ -47,3 +47,4 @@ double Pn(int n, double x);               //题 3.3.3
 double Pn_recursion(int n, double x);     //题 3.3.3
 int calcPostExpression(char ch[]);        //例题1
 int fib(int n);                           //例题2
+void infixToPost(char infix[]);  //例题3
