@@ -127,6 +127,8 @@
     <ClCompile Include="3.3.2_trainSchedule.cpp" />
     <ClCompile Include="3.3.3_alterRecursionToNormal.cpp" />
     <ClCompile Include="3.3.4_ferryManagement.cpp" />
+    <ClCompile Include="3.3.5_calculatePostfixExpression.cpp" />
+    <ClCompile Include="3.3.6_Fibonacci.cpp" />
     <ClCompile Include="ADT.cpp" />
     <ClCompile Include="com.cpp" />
     <ClCompile Include="main.cpp" />

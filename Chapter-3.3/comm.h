@@ -43,3 +43,7 @@ void ClearLinkStack(LinkStack& LS);
 bool matchBracket(char* ch);             //题 3.3.1
 int calculateAB(int a, char op, int b);   //题 3.3.1
 void trainSchedule(char* train);          //题 3.3.2
+double Pn(int n, double x);               //题 3.3.3
+double Pn_recursion(int n, double x);     //题 3.3.3
+int calcPostExpression(char ch[]);        //例题1
+int fib(int n);                           //例题2

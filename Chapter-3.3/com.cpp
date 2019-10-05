@@ -138,26 +138,3 @@ void printLinkQueue(LinkQueue LQ, int length) {
 
 
 
-/*针对操作符求值*/
-int calculateAB(int a, char op, int b) {
-	switch (op) {
-	case '+':
-		return a + b;
-		break;
-	case '-':
-		return a - b;
-		break;
-	case '*':
-		return a * b;
-		break;
-	case '/':
-		if (b != 0) {
-			return a / b;
-		}
-		else {
-			printf("The denominator can't be 0!!!\n");
-			return NULL;
-		}
-		break;
-	}
-}

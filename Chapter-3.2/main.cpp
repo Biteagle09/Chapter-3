@@ -8,7 +8,7 @@ LinkQueue LQ;
 // = {5,5,5,5,5,5,5}
 
 //º¯ÊıÉùÃ÷
-void test_232();
+//void test_232();
 
 
 int main() {
@@ -19,7 +19,7 @@ int main() {
 	InitLinkQueue(LQ);
 	
 
-	test_232();
+	//test_232();
 	
 	
 
