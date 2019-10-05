@@ -113,7 +113,7 @@ void test_336() {
 
 //test337 ÀýÌâ3 
 void test_337() {
-	char ch[] = "(57-8)+9/3+22*1+5";
+	char ch[] = "4-(4+2)/3+9*2";
 	printf("The infix expression is : ");
 	int i = 0;
 	while (ch[i] != '\0') {
@@ -121,4 +121,5 @@ void test_337() {
 	}
 	printf_s("\nThe post expression is : ");
 	infixToPost(ch);
+	printf_s("\n");
 }

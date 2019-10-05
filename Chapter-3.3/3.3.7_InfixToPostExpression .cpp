@@ -31,18 +31,27 @@ void infixToPost(char infix[]) {
 	char x;
 	char c;
 	while (infix[i] != '\0') {
-		c = infix[i];
+		c = infix[i++];
 		switch (c){
 		case '(':
 		case '[':
 		case '{':
 			Push(S, c);
 			break;
+		case ')':
+		case ']':
+		case '}':
+			while (!StatckEmpty(S) && Top(S) != '(' && Top(S) != '[' && Top(S) != '{') {
+				Pop(S, x);
+				post.data[post.len++] = x;
+			}
+			S.top--;
+			break;
 		case '+':
 		case '-':
 			while (!StatckEmpty(S) && Top(S) != '(' && Top(S) != '[' && Top(S) != '{') {
 				Pop(S, x);
-				post.data[++post.len] = x;	
+				post.data[post.len++] = x;	
 			}
 			Push(S, c);
 			break;
@@ -50,13 +59,14 @@ void infixToPost(char infix[]) {
 		case '/':
 			while (!StatckEmpty(S) && Top(S) != '(' && Top(S) != '[' && Top(S) != '{' && Top(S) == '/' || Top(S) == '*') {
 				Pop(S, x);
-				post.data[++post.len] = x;
+				post.data[post.len++] = x;
 			}
 			Push(S, c);
 			break;
 		default:
 			while (c >= '0' && c <= '9') {
-				post.data[++post.len] = c;
+				post.data[post.len++] = c;
+				break;
 			}
 		}
 
@@ -64,9 +74,9 @@ void infixToPost(char infix[]) {
 
 	while (!StatckEmpty(S)) {
 		Pop(S, x);
-		post.data[++post.len] = x;
+		post.data[post.len++] = x;
 	}
-	//post.data[++post.len] = '\0';
+	//post.data[post.len++] = '\0';
 
 	for (int i = 0; i < post.len; i++) {
 		printf("%c", post.data[i]);
@@ -84,7 +94,7 @@ bool StatckEmpty(MyStatck S) {
 	return S.top == -1;
 }
 
-/*队列是否满*/
+/*栈是否满*/
 bool StatckFull(MyStatck S) {
 	return S.top == MaxSize - 1;
 }
