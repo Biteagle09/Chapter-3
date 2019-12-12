@@ -54,9 +54,4 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
-  <ItemGroup>
-    <Text Include="新建文本文档.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-  </ItemGroup>
 </Project>

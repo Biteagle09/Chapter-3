@@ -64,7 +64,7 @@ void infixToPost(char infix[]) {
 			Push(S, c);
 			break;
 		default:
-			while (c >= '0' && c <= '9') {
+			while (c != NULL) {   //c >= '0' && c <= '9')
 				post.data[post.len++] = c;
 				break;
 			}

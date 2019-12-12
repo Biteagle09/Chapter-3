@@ -12,9 +12,9 @@ LinkQueue LQ;
 //void test_332();
 //void test_333();
 //void test_334();
-void test_335();
+//void test_335();
 //void test_336();
-//void test_337();
+void test_337();
 
 int main() {
 	//randMy(arr, length, limit);
@@ -28,9 +28,9 @@ int main() {
 	//test_332();
 	//test_333();
 	//test_334();
-	test_335();
+	//test_335();
 	//test_336();
-	//test_337();
+	test_337();
 	
 
 
@@ -113,7 +113,7 @@ void test_336() {
 
 //test337 ÀıÌâ3 
 void test_337() {
-	char ch[] = "35*2+60+43*2+50*3+70*5+40*2+60*2+50*3+60";
+	char ch[] = "a*(b+c)-d";   //35*2+60+43*2+50*3+70*5+40*2+60*2+50*3+60
 	printf("The infix expression is : ");
 	int i = 0;
 	while (ch[i] != '\0') {
